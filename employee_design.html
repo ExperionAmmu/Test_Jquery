@@ -1,0 +1,64 @@
+<! DOCTYPE <html></html>
+ <html lang="en">
+ <head>
+     <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <title>Employee details</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="employee_style.css">
+        <script type="text/javascript" src="employee_details.js"></script>
+
+
+ </head>
+ <body>
+    <div class = "head_style">
+        <h1>Employee Details</h1>
+    </div>
+    <div class="container">
+
+        <div class= "row_table" >
+                <table id= "t1" class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Employee Name</th>
+                            <th>Designation</th>
+                            <th>Total Salary</th>
+                            <th>Actions</th>
+                            </tr>
+                    </thead>
+                </table>
+            </div>
+            <div class = "row">
+                <div class="col-md-6 style_details">
+                <h1> Add New Employee</h1>
+                </div>
+            </div>
+
+            <div class="details_area">
+
+                <div class="col-md-8">
+                <form name ="employee" id ="f1">
+                    <input type="number" name="id" id ="id"  placeholder="Employee id"  class="form-control" required>&nbsp;<span id="errmsg"></span><br />
+                    <input type="text" name="name" id = "name"  placeholder="Employee name " class= "form-control name" required ><br />
+                    <input type="text" name="designation" id = "desg"  placeholder="Employee designation " class= "form-control" required ><br />
+                    <input type="number" name="basicpay" id = "basicpay"  placeholder="Basic Pay " class= "form-control" required >&nbsp;<span id="errmsg"><br />
+                    <input type="number" name="da" id = "da"  placeholder="DA" class= "form-control" required >&nbsp;<span id="errmsg"><br />
+                    <input type="number" name="hra" id = "hra"  placeholder="HRA" class= "form-control" required >&nbsp;<span id="errmsg"><br />
+                    <input type="number" name="medical allowances" id = "medical"  placeholder="Medical Allowances" class= "form-control" required>&nbsp;<span id="errmsg"><br />
+                    <input  type="number" name="total salary" id = "salary"  placeholder="Total Salary" class= "form-control"><br />
+
+                <div class="row_button">
+                  <div class="col-md-6">
+                     <button type="button" class="btn btn-info" id ="new" value ="show popup">New</button>
+                     <button type="button" class="btn btn-info" id ="save" value ="show popup">Save</button>
+                     <button type="reset" class="btn btn-info" id ="cancel">Cancel</button><br />
+                 </div>
+                </div>
+                </form>
+            </div>
+        </div>
+        </div>
+ </body>
+ </html>
